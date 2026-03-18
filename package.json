@@ -1,0 +1,18 @@
+{
+  "name": "opencode-api",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/test-workflow.js",
+    "test:docker": "powershell -ExecutionPolicy Bypass -File tests/test-docker.ps1",
+    "verify": "node tests/verify-integration.js"
+  },
+  "dependencies": {
+    "@opencode-ai/sdk": "^1.2.20",
+    "dotenv": "^17.3.1",
+    "express": "^5.0.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.19.0"
+  }
+}
